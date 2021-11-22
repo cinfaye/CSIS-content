@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Launch Panel</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href="../../../css/freelancer.min.css" rel="stylesheet" type="text/css"/>
+        
+        <script src="ErrorHandler.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8"><header class="h2">Set all of the controls correctly, and you can launch</header></div>
+                <div class="col-sm-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <div class="form-group">
+                        <label class="lead font-weight-bold">Engine Coolant:  ON</label><input type="radio" value="On" checked id="ECOn" name="EC">
+                        <label class="lead font-weight-bold">OFF</label><input type="radio" value="Off" checked id="ECOff" name="EC"><br>
+                        <label class="lead font-weight-bold">Fuel Burn time in Launch (1-100%):</label><input type="number" name="Burn" id="Burn" min="1" max="100"><br>
+                        <label class="lead font-weight-bold">Launch Code: </label><input type="text" name="Code" id="Code"><br>
+                        <button class="lead font-weight-bold" id="Launch" name="Launch" onclick="return TakeOff();">Launch</button>
+                    </div>
+                </div>
+                <div class="col-sm-2"></div>
+            </div> 
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8"><ul class="lead font-weight-bold" id="status"></ul></div>
+                <div class="col-sm-2"></div>
+            </div>    
+        </div>    
+        
+    </body>
+</html>
